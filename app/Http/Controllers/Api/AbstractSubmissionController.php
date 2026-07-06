@@ -117,7 +117,7 @@ class AbstractSubmissionController extends Controller
                 Str::random(3)
             );
             $abstractId =
-                'NZUSI-' .
+                'UAUP-' .
                 date('Y') . '-' .
                 $firstLetter .
                 $presentationLetter .
