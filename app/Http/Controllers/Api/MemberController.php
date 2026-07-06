@@ -53,7 +53,7 @@ class MemberController extends Controller
                         ? asset('storage/images/member/' . $user->profile_image)
                         : null,
                     'mobile_no' => $user->mobile_no,
-                    'membership_type' => $user->type->title : null,
+                    'membership_type' => $user->type ? $user->type->title : null,
                     'dob' => $user->dob ? $user->dob->format('Y-m-d') : null,
                     'usi_member' => $user->usi_member ?? null,
                     'usi_number' => $user->usi_number ?? null,

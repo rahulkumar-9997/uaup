@@ -212,7 +212,7 @@ class MemberAuthController extends Controller
                     'gender' => $member->gender,
                     'city_name' => $member->city_name,
                     'mobile_no' => $member->mobile_no,
-                    'membership_type' => $member->type->title : null,
+                    'membership_type' => $member->type ? $member->type->title : null,
                     'dob' => $member->dob ? $member->dob->format('Y-m-d') : null,
                     'usi_member' => $member->usi_member ?? null,
                     'usi_number' => $member->usi_number ?? null,
